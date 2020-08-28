@@ -1,8 +1,15 @@
 const express = require('express');
+const connectDB = require('./config/db')
 
 const app = express();
 
-app.get('/', (req, res) => res.senjson('Welcome to ContactBook App'));
+// Connect database
+connectDB();
+
+// INIT MIDDLEWARE
+app.use(express.json({ extended: false }));
+
+app.get('/', (req, res) => res.json('Welcome to ContactBook App'));
 
 //Define Routes
 
