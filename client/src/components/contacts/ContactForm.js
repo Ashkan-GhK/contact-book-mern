@@ -39,7 +39,7 @@ function ContactForm() {
             <h5>
               Contact Type
             </h5>
-            <input type="radio" name="type" value="personal" checked={}
+            <input type="radio" name="type" value="personal" checked={}t
         </form>
     )
 }
